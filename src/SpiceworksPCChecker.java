@@ -54,6 +54,7 @@ public class SpiceworksPCChecker {
 		System.out.println("If you continue at this rate you will become PC "
 				+ "in " + daysTillPC + " days.");
 		System.out.println("This is " + daysTillPC / 365 + " years.");
+		System.out.println("Good luck");
 	}
 
 }
