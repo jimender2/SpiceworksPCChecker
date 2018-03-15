@@ -36,12 +36,13 @@ public class SpiceworksPCChecker {
 		
 		//Convert day joined to date format
 		Date date = new SimpleDateFormat("MM/dd/yyyy").parse(dateJoined);
-		String timeStamp = new SimpleDateFormat("MM/dd/yyyy").format(new java.util.Date());
+		String timeStamp;
+		timeStamp= new SimpleDateFormat("MM/dd/yyyy").format(new java.util.Date());
 		Date date1 = new SimpleDateFormat("MM/dd/yyyy").parse(timeStamp);
 		
 		//Get time between the two dates
 		millisec = date1.getTime() - date.getTime();
-		day = millisec / 24 /60/60/1000;
+		day = millisec / 24 / 60 / 60 / 1000;
 		
 		//Calculate a few different things
 		pointsPerDay = totalPoints / day;
