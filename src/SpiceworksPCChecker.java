@@ -35,6 +35,7 @@ public class SpiceworksPCChecker {
 		scan.close();
 		
 		//Convert day joined to date format
+		//Mar 23, 2016
 		Date date = new SimpleDateFormat("MM/dd/yyyy").parse(dateJoined);
 		String timeStamp;
 		timeStamp= new SimpleDateFormat("MM/dd/yyyy").format(new java.util.Date());
