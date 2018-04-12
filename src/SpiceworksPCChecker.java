@@ -57,6 +57,15 @@ public class SpiceworksPCChecker {
 				+ "in " + daysTillPC + " days.");
 		System.out.println("This is " + daysTillPC / 365 + " years.");
 		System.out.println("Good luck");
+		
+		final int habenaro = 70000;
+		long pointsTillHabenaro = habenaro - totalPoints;
+		System.out.println("You will be a habenaro in " + pointsTillHabenaro + 
+				"points");
+		long daysTillHabenaro = pointsTillHabenaro / pointsPerDay;
+		System.out.println("That will be in " + daysTillHabenaro);
+		System.out.println("This is " + daysTillHabenaro / 365 + " years.");
+
 	}
 
 }
